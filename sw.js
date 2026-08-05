@@ -4,7 +4,8 @@ const urlsToCache = [
   '/index.html',
   '/manifest.json',
   '/android-chrome-192x192.png',
-  '/android-chrome-512x512.png'
+  '/android-chrome-512x512.png',
+  '/C:\Users\dober\OneDrive\GODOI\Área de Trabalho\PYTHON\PWA_Tiro_OP_RR\brasao-op.png.png'
 ];
 
 self.addEventListener('install', event => {
