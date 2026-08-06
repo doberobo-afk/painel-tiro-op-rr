@@ -27,17 +27,17 @@ if('serviceWorker' in navigator){
     width: 55px;
     height: 55px;
     object-fit: contain;
-    filter: drop-shadow(0 0 2px #FFD700);
+    filter: drop-shadow(0 0 2px #ffd90042);
 }
-.header h1 { color: #FFD700; font-size: 18px; text-align: center; font-weight: 700; }
+.header h1 { color: #ffd90042; font-size: 18px; text-align: center; font-weight: 700; }
 .tabs { display: flex; gap: 5px; margin-bottom: 10px; }
 .tab { flex:1; padding: 10px; background: #222; border: 1px solid #444; color: #ccc; border-radius: 5px; cursor: pointer; text-align: center; font-size: 14px; }
-.tab.active { background: #FFD700; color: #000; font-weight: bold; }
+.tab.active { background: #ffd90042; color: #000; font-weight: bold; }
 .card { background: #1a1a1a; padding: 15px; border-radius: 8px; margin-bottom: 10px; border: 1px solid #333; display: none; }
 .card.active { display: block; }
     label { font-size: 14px; color: #ccc; }
     input, select, button { width: 100%; padding: 10px; margin-top: 5px; background: #222; color: white; border: 1px solid #444; border-radius: 5px; font-size: 16px; }
-    button { background: linear-gradient(90deg, #FFD700 0%, #FFA500 100%); color: #000; border: none; font-weight: bold; cursor: pointer; margin-top: 10px; }
+    button { background: linear-gradient(90deg, #ffd90042 0%, #FFA500 100%); color: #000; border: none; font-weight: bold; cursor: pointer; margin-top: 10px; }
     button:hover { filter: brightness(1.1); }
 .btn-danger { background: #c00; color: #fff; }
 .btn-pdf { background: #0a58ca; color: #fff; }
@@ -45,12 +45,12 @@ if('serviceWorker' in navigator){
 .btn-load { background: #7c3aed; color: #fff; }
 .lista { margin-top: 10px; max-height: 250px; overflow-y: auto; }
 .item { display: flex; justify-content: space-between; align-items: center; padding: 10px; background: #222; margin: 5px 0; border-radius: 5px; border-left: 3px solid #FFD700; }
-.item b { color: #FFD700; }
+.item b { color: #ffd90042; }
 .item button { width: auto; padding: 5px 10px; margin: 0; font-size: 12px; background: #c00; }
 .modalidade-tag { font-size: 11px; background: #333; padding: 2px 6px; border-radius: 4px; color: #FFD700; }
 .subtabs { display: flex; gap: 5px; margin-bottom: 10px; }
 .subtab { flex:1; padding: 8px; background: #333; color: #ccc; border-radius: 5px; cursor: pointer; text-align: center; font-size: 13px; }
-.subtab.active { background: #FFD700; color: #000; font-weight: bold; }
+.subtab.active { background: #ffd90042; color: #000; font-weight: bold; }
 </style>
 </head>
 <body>
@@ -69,11 +69,11 @@ if('serviceWorker' in navigator){
 
 <div id="cadastro" class="card active">
     <button class="btn-danger" onclick="resetarSistema()" style="margin-bottom:10px;">Resetar Sistema</button>
-    <h3 style="color:#FFD700;">Cadastrar Time</h3>
+    <h3 style="color:#ffd90042;">Cadastrar Time</h3>
     <input type="text" id="nomeTime" placeholder="Ex: ALFA">
     <button onclick="addTime()">+ Adicionar Time</button>
     <div id="listaTimes" class="lista"></div>
-    <h3 style="color:#FFD700; margin-top:20px;">Cadastrar Membros</h3>
+    <h3 style="color:#ffd90042; margin-top:20px;">Cadastrar Membros</h3>
     <select id="timeSelectCadastro"></select>
     <input type="text" id="nomeMembro" placeholder="Ex: SD PM Silva">
     <button onclick="addMembro()">+ Adicionar Membro</button>
@@ -81,7 +81,7 @@ if('serviceWorker' in navigator){
 </div>
 
 <div id="lancar" class="card">
-    <h3 style="color:#FFD700;">Lançar Resultado</h3>
+    <h3 style="color:#ffd90042;">Lançar Resultado</h3>
     <label>Time:</label><select id="timeSelectLancar" onchange="atualizarMembrosLancar()"></select>
     <label>Membro:</label><select id="membroSelectLancar"></select>
     <label>Arma/Modalidade:</label>
@@ -114,11 +114,11 @@ if('serviceWorker' in navigator){
 </div>
 
 <div id="arquivo" class="card">
-    <h3 style="color:#FFD700;">Salvar e Resgatar Torneio</h3>
+    <h3 style="color:#ffd90042;">Salvar e Resgatar Torneio</h3>
     <p style="font-size:14px; color:#aaa; margin-bottom:10px;">Salve com a data de hoje ou escolha um backup antigo pra resgatar</p>
     <button class="btn-save" onclick="salvarBackup()">Salvar Backup com Data de Hoje</button>
     <button class="btn-load" onclick="baixarJSON()">Baixar.json</button>
-    <h4 style="color:#FFD700; margin-top:20px;">Backups Salvos no Celular:</h4>
+    <h4 style="color:#ffd90042; margin-top:20px;">Backups Salvos no Celular:</h4>
     <div id="listaBackups" class="lista"></div>
     <label style="margin-top:15px;">Ou carregar arquivo.json manual:</label>
     <input type="file" id="inputArquivo" accept=".json" onchange="importarJSON(event)">
