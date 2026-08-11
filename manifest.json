@@ -1,0 +1,39 @@
+{
+  "id": "painel-tiro-op-rr",
+  "name": "Painel Tático - Torneio de Tiro OP RR",
+  "short_name": "Painel Tiro RR",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#FFD700",
+  "orientation": "any",
+  "categories": ["sports", "utilities"],
+  "icons": [
+    {
+      "src": "./android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "narrow",
+      "label": "Tela Inicial"
+    },
+    {
+      "src": "./android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Painel Geral"
+    }
+  ]
+}
