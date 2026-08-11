@@ -1,0 +1,8 @@
+[{
+      "relation": ["delegate_permission/common.handle_all_urls"],
+      "target": {
+        "namespace": "android_app",
+        "package_name": "app.vercel.painel_tiro_op_rr.twa",
+        "sha256_cert_fingerprints": ["91:B7:2E:FA:FC:E1:EC:CD:DC:C5:18:F4:EC:9B:9A:FD:1C:C6:B5:5A:5A:F4:6E:BB:07:09:C2:86:6D:85:1F:7F"]
+      }
+    }]
